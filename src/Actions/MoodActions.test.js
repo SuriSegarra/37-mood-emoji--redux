@@ -16,5 +16,13 @@ describe('mood actions test', () => {
             type: EAT_SNACK
         });
     });
+
+    it('takes a nap', () => {
+        const actions = takeNap();
+
+        expect(actions).toEqual({
+            type: TAKE_NAP
+        });
+    });
 });
 
