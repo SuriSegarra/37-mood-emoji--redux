@@ -8,4 +8,13 @@ describe('mood actions test', () => {
             type: DRINK_COFFEE
         });
     });
+
+    it('eats a snack', () => {
+        const actions = eatSnack();
+
+        expect(actions).toEqual({
+            type: EAT_SNACK
+        });
+    });
 });
+
