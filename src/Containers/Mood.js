@@ -6,7 +6,6 @@ import { getCoffees, getSnack, getNaps, getStudy, getFace } from '../Selectors/M
 import { drinkCoffee, eatSnack, takeNap, study } from '../Actions/MoodActions';
 
 const Mood = () => {
-
   const dispatch = useDispatch();
   const coffees = useSelector(getCoffees);
   const snacks = useSelector(getSnack);
@@ -17,6 +16,7 @@ const Mood = () => {
   
   const handleSelection = action => {
     
+    //mood actions
     switch(action.type) {
       case 'DRINK_COFFEE':
         dispatch(drinkCoffee())
@@ -38,6 +38,7 @@ const Mood = () => {
 
     return (
       <>
+      {/* mood selector */}
         <Controls>
           <button onClick={() => handleSelection({ type: 'DRINK_COFFEE' })}>coffee - {coffees}</button>
           <button onClick={() => handleSelection({ type: 'EAT_SNACK' })}>snacks - {snacks}</button>
