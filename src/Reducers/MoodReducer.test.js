@@ -53,6 +53,24 @@ describe('drink coffee reducer', () => {
             snacks: 1,
             naps: 1,
             studies: 0
-        })
-    })
+        });
+    });
+
+    it('handles study action', () => {
+        const state = {
+            coffees: 1,
+            snacks: 1,
+            naps: 1,
+            studies: 0
+        }
+        const action = study();
+        const newState = reducer(state, action);
+
+        expect(newState).toEqual({
+            coffees: 1,
+            snacks: 1,
+            naps: 1,
+            studies: 1
+        });
+    });
 });
