@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import reducer from './reducers';
+import reducer from './Reducers/MoodReducer';
 
 export default createStore(
   reducer,
