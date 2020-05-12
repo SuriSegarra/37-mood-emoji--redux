@@ -24,5 +24,12 @@ describe('mood actions test', () => {
             type: TAKE_NAP
         });
     });
+    it('study', () => {
+        const actions = study();
+
+        expect(actions).toEqual({
+            type: STUDY
+        });
+    });
 });
 
