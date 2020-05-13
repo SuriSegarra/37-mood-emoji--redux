@@ -1,6 +1,6 @@
 import React from 'react';
 import Controls from '../components/controls/Controls';
-import Face from '../components/face/Face';
+import Face from '../components/Face/Face';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCoffees, getSnack, getNaps, getStudy, getFace } from '../Selectors/MoodSelector';
 import { drinkCoffee, eatSnack, takeNap, study } from '../Actions/MoodActions';
