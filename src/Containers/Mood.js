@@ -33,8 +33,6 @@ const Mood = () => {
                 console.log(`unhandled type: ${action.type}`);
               }
             
-            
-
     return (
       <>
       {/* mood selector */}
