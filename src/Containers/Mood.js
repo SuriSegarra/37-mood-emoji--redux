@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Controls from '../components/controls/Controls';
 import Face from '../components/face/Face';
 import { useSelector, useDispatch } from 'react-redux';
@@ -14,7 +14,6 @@ const Mood = () => {
   const face = useSelector(getFace);
   
   
-  const handleSelection = action => {
     
     //mood actions
     switch(action.type) {
@@ -33,7 +32,7 @@ const Mood = () => {
               default:
                 console.log(`unhandled type: ${action.type}`);
               }
-            }
+            
             
 
     return (
@@ -49,7 +48,7 @@ const Mood = () => {
       </>
     );
     
-}
 
+    }
 
 export default Mood;
