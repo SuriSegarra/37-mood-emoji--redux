@@ -47,8 +47,6 @@ const Mood = () => {
         <Face emoji={face} />
       </>
     );
-    
-
     }
 
 export default Mood;
